@@ -33,6 +33,7 @@ const Screen_02 = () => {
   const filteredData = data.filter(
     (item) => item.type === type && item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
   return (
     <ScrollView stickyHeaderIndices={[0]}>
       <View style={styles.header}>
